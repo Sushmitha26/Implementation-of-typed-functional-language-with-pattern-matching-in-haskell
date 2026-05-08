@@ -1,0 +1,11 @@
+letrec sumList : (List Int -> Int) = \xs : (List Int) ->
+  case xs of
+    Nil -> 0
+    | Cons h t -> h + (sumList t)
+in
+sumList (Cons 1 (Cons 2 (Cons 3 (Nil[Int]))))
+
+
+case Cons true (Nil[Bool]) of
+  Nil -> 0
+  | Cons h t -> h + 1
